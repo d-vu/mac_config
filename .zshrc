@@ -103,51 +103,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-
-alias whisper_env="source ~/Downloads/whisper-env/bin/activate"
-alias transcribe='function _t(){ source ~/Downloads/whisper-env/bin/activate && python3 ~/Downloads/whisper-env/transcribe.py "$@"; }; _t'
-# alias translate='source ~/Downloads/whisper-env/bin/activate && python3 ~/Downloads/whisper-env/translate.py'
-alias translate_asr='~/Downloads/translate-env/bin/python ~/Downloads/translate-env/translate_asr.py'
 alias translate_one_pass='~/Downloads/translate-env/bin/python ~/Downloads/translate-env/translate_one_pass.py'
-alias translate_two_pass='~/Downloads/translate-env/bin/python ~/Downloads/translate-env/translate_two_pass.py'
-
-
-alias img3d="~/Downloads/img3d_tool/.venv/bin/python ~/Downloads/img3d_tool/img3d.py"
-
-
-
-# alias gpt_fix='source ~/Downloads/whisper-env/bin/activate && python3  ~/Downloads/whisper-env/rewrite_from_ja_srt.py'
-alias gpt_fix_context='source ~/Downloads/whisper-env/bin/activate && python3  ~/Downloads/whisper-env/translate_context.py'
-alias reload="source ~/.zshrc"
-alias alias_edit="code ~/.zshrc"
-alias nvim_edit="nvim ~/.config/nvim/init.vim"
-alias sbs='source ~/Downloads/vr_sbs/bin/activate && python3 ~/Downloads/vr_sbs/make_sbs_hq_batch.py'
-
-
-alias translate2='function _t(){ source ~/Downloads/whisper-env/bin/activate && python3 ~/Downloads/whisper-env/transcribe.py --translate "$@"; }; _t'
-function transcribe_all {
-  setopt nullglob extended_glob
-  source ~/Downloads/whisper-env/bin/activate
-
-  for file in *.(mp4|mkv|mov|avi)(N); do
-    filename_lc=${file:l}
-    base="${file%.*}"
-
-    # if [[ "$filename_lc" == *english*sub* ]]; then
-    #   echo "⏭️ Skipping \"$file\" (contains 'english sub')"
-    #   continue
-    # fi
-
-    # if [[ -f "${base}_ja.srt" || -f "${base}_en.srt" ]]; then
-    #   echo "⏭️ Skipping \"$file\" (already transcribed)"
-    #   continue
-    # fi
-
-    echo "▶️ Transcribing: \"$file\""
-    translate2 "$file"
-  done
-}
-
 
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
