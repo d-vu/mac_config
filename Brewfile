@@ -24,6 +24,8 @@ cask "raycast"
 cask "obsidian"
 cask "todoist"
 
+cask "visual-studio-code"
+
 # --- Utilities & System Tools ---
 cask "bartender"
 cask "rectangle"
@@ -36,4 +38,3 @@ cask "protonvpn"
 # --- Media & Design ---
 cask "vlc"
 cask "folx"
-cask "hand-mirror"
