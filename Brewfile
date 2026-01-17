@@ -1,44 +1,39 @@
-brew "aom"
-brew "aribb24"
-brew "autoconf"
-brew "c-ares"
-brew "ca-certificates"
-brew "cairo"
-brew "certifi"
-brew "cjson"
-brew "dav1d"
-brew "ffmpeg"
-brew "gdbm"
-brew "imagemagick"
-brew "libuv"
-brew "lpeg"
-brew "luajit"
-brew "luv"
-brew "mpdecimal"
-brew "neovim"
-brew "node"
-brew "pkgconf"
-brew "pyenv"
-brew "python@3.10"
-brew "python@3.12"
-brew "python@3.13"
-brew "tree"
-brew "whisper-cpp"
-brew "yarn"
-brew "yt-dlp"
-brew "zsh-autosuggestions"
-brew "zsh-syntax-highlighting"
-vscode "codeium.codeium"
-vscode "dbaeumer.vscode-eslint"
-vscode "gerane.theme-flatlandmonokai"
-vscode "github.copilot"
-vscode "github.copilot-chat"
-vscode "monokai.theme-monokai-pro-vscode"
-vscode "ms-python.debugpy"
-vscode "ms-python.python"
-vscode "ms-python.vscode-pylance"
-vscode "ms-python.vscode-python-envs"
-vscode "ms-vscode.live-server"
-vscode "ms-vscode.vscode-typescript-next"
-vscode "ryu1kn.partial-diff"
-vscode "wscats.cors-browser"
+# ==============================================================================
+# HOW TO USE THIS BREWFILE
+# ==============================================================================
+# 1. Install Homebrew first:
+#    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+#
+# 2. Move this file to your Downloads folder.
+#
+# 3. Open Terminal and run:
+#    cd ~/Downloads
+#    brew bundle
+# ==============================================================================
+
+# --- Taps (Repositories) ---
+tap "homebrew/bundle"
+tap "homebrew/cask"
+
+# --- Browsers ---
+cask "google-chrome"
+
+# --- Productivity & Organization ---
+cask "alfred"
+cask "raycast"
+cask "obsidian"
+cask "todoist"
+
+# --- Utilities & System Tools ---
+cask "bartender"
+cask "rectangle"
+cask "istat-menus"
+cask "android-file-transfer"
+
+# --- Privacy & Networking ---
+cask "protonvpn"
+
+# --- Media & Design ---
+cask "vlc"
+cask "folx"
+cask "hand-mirror"
