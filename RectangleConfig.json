@@ -74,7 +74,7 @@
       "float" : 0.3
     },
     "footprintAnimationDurationMultiplier" : {
-      "float" : 0
+      "float" : 0.75
     },
     "footprintBorderWidth" : {
       "float" : 2
@@ -243,40 +243,40 @@
     }
   },
   "shortcuts" : {
+    "bottomHalf" : {
+      "keyCode" : 125,
+      "modifierFlags" : 786432
+    },
     "bottomLeft" : {
-      "keyCode" : 38,
+      "keyCode" : 20,
       "modifierFlags" : 786432
     },
     "bottomRight" : {
-      "keyCode" : 40,
+      "keyCode" : 21,
       "modifierFlags" : 786432
     },
     "center" : {
       "keyCode" : 8,
       "modifierFlags" : 786432
     },
-    "centerThird" : {
-      "keyCode" : 30,
+    "firstFourth" : {
+      "keyCode" : 39,
       "modifierFlags" : 786432
     },
     "firstThird" : {
-      "keyCode" : 33,
+      "keyCode" : 30,
+      "modifierFlags" : 786432
+    },
+    "firstThreeFourths" : {
+      "keyCode" : 41,
       "modifierFlags" : 786432
     },
     "firstTwoThirds" : {
-      "keyCode" : 41,
+      "keyCode" : 33,
       "modifierFlags" : 786432
     },
     "larger" : {
       "keyCode" : 24,
-      "modifierFlags" : 786432
-    },
-    "lastThird" : {
-      "keyCode" : 42,
-      "modifierFlags" : 786432
-    },
-    "lastTwoThirds" : {
-      "keyCode" : 39,
       "modifierFlags" : 786432
     },
     "leftHalf" : {
@@ -284,7 +284,7 @@
       "modifierFlags" : 786432
     },
     "maximize" : {
-      "keyCode" : 126,
+      "keyCode" : 36,
       "modifierFlags" : 786432
     },
     "maximizeHeight" : {
@@ -319,14 +319,22 @@
       "keyCode" : 46,
       "modifierFlags" : 786432
     },
+    "topHalf" : {
+      "keyCode" : 126,
+      "modifierFlags" : 786432
+    },
     "topLeft" : {
-      "keyCode" : 32,
+      "keyCode" : 18,
       "modifierFlags" : 786432
     },
     "topRight" : {
-      "keyCode" : 34,
+      "keyCode" : 19,
+      "modifierFlags" : 786432
+    },
+    "topRightSixth" : {
+      "keyCode" : 42,
       "modifierFlags" : 786432
     }
   },
-  "version" : "98"
+  "version" : "99"
 }
