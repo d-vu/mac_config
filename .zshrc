@@ -103,8 +103,20 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
-alias translate_one_pass='~/Downloads/translate-env/bin/python ~/Downloads/translate-env/translate_one_pass.py'
 
+#run command to print out alias command in green color
+run() {
+  print -P "→ %F{70}$*%f"
+  "$@"
+}
+
+alias translate_one_pass='~/Downloads/translate-env/bin/python ~/Downloads/translate-env/translate_one_pass.py'
+alias a='run code ~/.zshrc'
+alias reload='run source ~/.zshrc'
+alias restart='run exec zsh'
+alias config='run cd ~/dotfiles/'
+alias downloads='run cd ~/Downloads/'
+alias desktop='run cd ~/Desktop/'
 
 eval "$(/opt/homebrew/bin/brew shellenv)"
 

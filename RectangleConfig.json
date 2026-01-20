@@ -243,10 +243,6 @@
     }
   },
   "shortcuts" : {
-    "bottomHalf" : {
-      "keyCode" : 125,
-      "modifierFlags" : 786432
-    },
     "bottomLeft" : {
       "keyCode" : 20,
       "modifierFlags" : 786432
@@ -259,12 +255,8 @@
       "keyCode" : 8,
       "modifierFlags" : 786432
     },
-    "firstFourth" : {
-      "keyCode" : 39,
-      "modifierFlags" : 786432
-    },
-    "firstThird" : {
-      "keyCode" : 30,
+    "centerHalf" : {
+      "keyCode" : 36,
       "modifierFlags" : 786432
     },
     "firstThreeFourths" : {
@@ -279,17 +271,25 @@
       "keyCode" : 24,
       "modifierFlags" : 786432
     },
+    "lastFourth" : {
+      "keyCode" : 39,
+      "modifierFlags" : 786432
+    },
+    "lastThird" : {
+      "keyCode" : 30,
+      "modifierFlags" : 786432
+    },
+    "lastTwoThirds" : {
+      "keyCode" : 39,
+      "modifierFlags" : 786432
+    },
     "leftHalf" : {
       "keyCode" : 123,
       "modifierFlags" : 786432
     },
     "maximize" : {
-      "keyCode" : 36,
-      "modifierFlags" : 786432
-    },
-    "maximizeHeight" : {
       "keyCode" : 126,
-      "modifierFlags" : 917504
+      "modifierFlags" : 786432
     },
     "nextDisplay" : {
       "keyCode" : 124,
@@ -317,10 +317,6 @@
     },
     "toggleTodo" : {
       "keyCode" : 46,
-      "modifierFlags" : 786432
-    },
-    "topHalf" : {
-      "keyCode" : 126,
       "modifierFlags" : 786432
     },
     "topLeft" : {
