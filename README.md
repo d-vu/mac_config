@@ -2,6 +2,7 @@
 
 ## 1. Update Native Macbook Settings 1/2
 - [ ] Increase track pad and scroll sensitivity
+- [ ] Enable **Tap to click**
 - [ ] Increase keyboard repeat speed
 - [ ] **Reduce Motion** for desktop swipe
 
