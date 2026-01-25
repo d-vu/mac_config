@@ -276,11 +276,7 @@
       "modifierFlags" : 786432
     },
     "lastThird" : {
-      "keyCode" : 30,
-      "modifierFlags" : 786432
-    },
-    "lastTwoThirds" : {
-      "keyCode" : 39,
+      "keyCode" : 42,
       "modifierFlags" : 786432
     },
     "leftHalf" : {
@@ -328,7 +324,7 @@
       "modifierFlags" : 786432
     },
     "topRightSixth" : {
-      "keyCode" : 42,
+      "keyCode" : 30,
       "modifierFlags" : 786432
     }
   },

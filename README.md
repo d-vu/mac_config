@@ -5,6 +5,7 @@
 - [ ] Enable **Tap to click**
 - [ ] Increase keyboard repeat speed
 - [ ] **Reduce Motion** for desktop swipe
+- [ ] Increase screen time out on lock screen preference
 
 ## 2. Get Terminal and Git set up
 - [ ] cmd + space, **open Iterm**
