@@ -5,39 +5,34 @@
 - [ ] Enable **Tap to click**
 - [ ] Increase keyboard repeat speed
 - [ ] **Reduce Motion** for desktop swipe
-- [ ] Increase screen time out on lock screen preference
+- [ ] Lock screen Timeout
+- [ ] Show battery percentage
+- [ ] Autohide Dock
+- [ ] Turn off true tone
 
 ## 2. Get Terminal and Git set up
-- [ ] cmd + space, **open Iterm**
-- [ ] **Install home brew** run
 ```
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh) 
-```
-- [ ] **brew install --cask iterm2**
-- [ ] **Pull down dotfiles git repo**
-```
-cd ~
-git clone https://github.com/d-vu/dotfiles.git
-```
-- [ ] **Link Configs**
-```
-ln -sf ~/dotfiles/.zshrc ~/.zshrc
-ln -sf ~/dotfiles/.gitconfig ~/.gitconfig
-source ~/.zshrc
-```
-- [ ] **Install Oh my Zsh**
-```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
+brew install git
+brew install --cask iterm2
+open -a iTerm
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+cd ~
+git clone https://github.com/d-vu/mac_config.git
+rm -f ~/.zshrc ~/.gitconfig
+ln -s ~/mac_config/.zshrc ~/.zshrc
+ln -s ~/mac_config/.gitconfig ~/.gitconfig
 source ~/.zshrc
-mkdir -p ~/dotfiles/iterm2
 ```
 - [ ] **Point iterm2 to config folder**
 1. Settings -> General -> Preferences
-2. Load preferences ⌘⇧G → ~/dotfiles/iterm2
-3. Confirm with ls ~/dotfiles/iterm2
+2. Load preferences ⌘⇧G → ~/mac_config/iterm2
+3. Confirm with ls ~/mac_config/iterm2
 - [ ] Install app from brewfile
 ```
-cd ~/dotfiles
+cd ~/mac_config
 brew bundle
 ```
 

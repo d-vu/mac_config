@@ -11,30 +11,17 @@
 #    brew bundle
 # ==============================================================================
 
-# --- Taps (Repositories) ---
-tap "homebrew/bundle"
-tap "homebrew/cask"
 
-# --- Browsers ---
 cask "google-chrome"
-
-# --- Productivity & Organization ---
 cask "alfred"
 cask "raycast"
 cask "obsidian"
 cask "todoist"
-
 cask "visual-studio-code"
-
-# --- Utilities & System Tools ---
 cask "bartender"
 cask "rectangle"
 cask "istat-menus"
 cask "android-file-transfer"
-
-# --- Privacy & Networking ---
 cask "protonvpn"
-
-# --- Media & Design ---
 cask "vlc"
 cask "folx"
